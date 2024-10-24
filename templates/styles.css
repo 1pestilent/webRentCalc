@@ -1,0 +1,93 @@
+:root {
+    --main-bg: #1a1a1a;
+    --main-clr: #c73053;
+    --main-clr-hover: #c7305379;
+    --font-clr: #ffff;  
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--main-bg);
+    height: 70px;
+    box-shadow: 0px 2px 35px 3px var(--main-clr-hover);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo {
+    display: block;
+    padding: 10px;
+    padding-left: 30px;
+}
+.logo a img {
+    padding-right: 10px;
+    height: 30px;
+}
+.logo a{
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--main-clr);
+}
+
+.menu {
+    flex-grow: 1;
+    margin-left: 170px;
+}
+
+.menu ul,.account ul, .logo ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.menu a, .menu .active{
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+
+.menu a {
+    color: var(--main-clr);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: var(--font-clr);
+    background-color: var(--main-clr-hover);
+    border-radius: 6px;
+}
+
+.menu li {
+    margin-right: 20px;
+    padding: 10px 5px;
+}
+
+.menu li:last-child {
+    margin-right: 0px;
+}
+
+.account a {
+    display: block;
+    border-radius: 6px;
+    margin-right: 10px;
+    padding: 8px 10px;
+}
+.account a:hover {
+    background-color: var(--main-clr-hover);
+}
+
+@media screen and (max-width: 1060px) {}
+
+@media screen and (max-width: 601px) {}
