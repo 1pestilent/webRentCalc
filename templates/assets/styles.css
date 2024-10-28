@@ -1,0 +1,37 @@
+:root {
+    --main-bg: #1a1a1a;
+    --main-clr: #c73053;
+    --main-clr-hover: #c7305379;
+    --font-clr: #ffff;  
+}
+
+header {
+    background: var(--main-bg);
+}
+.logo-text {
+    color: var(--main-clr);
+    font-size: clamp(22px,3vw,28px);
+    text-decoration: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--main-clr);
+    padding: 7px;
+    font-size: 22px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+
+}
+
+header ul li a:hover{
+    background-color: var(--main-clr-hover);
+    border-radius: 5px;
+    color: white;
+    transform: scale(1.1); 
+}
+
+.acc:hover {
+    background-color: var(--main-clr-hover);
+}

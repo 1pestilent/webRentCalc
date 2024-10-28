@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
 </head>
 <body>
-<div class="header">
-    <div class="logo">      
-            <a href="#default">
-                <img src="src/pig.svg" alt="pig" class="icon">rentCalculator
-            </a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a class="active button" href="#home">Главная</a></li>
-            <li><a class="button" href="#contact">Contact</a></li>
-            <li><a class="button" href="#about">About</a></li>
-        </ul>
-    </div>
-    <div class="account">
-        <ul>
-            <li>
-                <a href="#lk"><img src="src/account_circle.svg" alt="acc" class="icon"></a>
-            </li>
-            <li>
-                <a href="#signin"><img src="src/login.svg" alt="login" class="icon"></a>
-            </li>
-        </ul>
-    </div>
+    <header class="px-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="src/pig.svg" width="40" height="32" alt="pig">
+                </a>
+                <a href="#" class="logo-text">rentCalc</a>
+            </div>
 
-</div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="px-2">Главная</a></li>
+                <li><a href="#" class="px-2">Калькулятор</a></li>
+                <li><a href="#" class="px-2">Донат</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="acc btn me-2"><img src="src/login.svg" alt="login"></button>
+                <button type="button" class="acc btn"><img src="src/account_circle.svg" alt="account"></button>
+                <button type="button" class="acc btn"><img src="src/logout.svg" alt="logout"></button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
