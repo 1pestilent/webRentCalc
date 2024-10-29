@@ -3,7 +3,8 @@
     --main-clr: #c73053;
     --main-clr-hover: #af1e40cb;
     --font-clr: #ffff;  
-    --2nd-bd: #777777;
+    --2nd-bd: #212429;
+    --2nd-clr: #bbbbbbc7;
 }
 
 header {
@@ -57,18 +58,17 @@ header ul li a:hover{
 .form-group {
     padding: 5px;
 }
-.w-80 {
-    width: 80%;
-}
 .w-90 {
-    width: 100%;
+    width: 90%;
 }
-.h-20 {
-    height: 20%;
+.w-80 {
+    width: 80%; 
+}
+.h-15 {
+    height: 15%;
 }
 .h-90 {
     height: 90%;
-    border-radius: 15px;
 }
 .h-95 {
     height: 95%;
@@ -113,4 +113,47 @@ header ul li a:hover{
 
 .btn-save:hover, .subincome-btn:hover{
     background-color: var(--main-clr-hover);
+}
+
+.canvas {
+    height: 90%;
+    width: 90%;
+    background-color: var(--2nd-bd);
+    border-radius: 15px;
+    border: var(--main-clr-hover) dotted 1px;
+}
+
+.block-info {
+    padding: 3px;
+    background-color: var(--2nd-bd);
+    width: 96%;
+    height: 80px;
+    margin-top: 3%;
+    margin-left: 2%;
+    border-radius: 5px;
+    border: var(--main-clr-hover) solid 1px;
+}
+
+.time {
+    margin-left: 3%;
+    color: var(--2nd-clr);
+    font-weight: 700;
+}
+.amount {
+    color: var(--font-clr);
+    text-align: center;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px){
+    .cont-height {
+        height: 130vh;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    .canvas {
+        height: 78vh;
+        margin-top: 5%;
+    }
 }
