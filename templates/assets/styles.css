@@ -1,8 +1,9 @@
 :root {
     --main-bg: #1a1a1a;
     --main-clr: #c73053;
-    --main-clr-hover: #c7305379;
+    --main-clr-hover: #af1e40cb;
     --font-clr: #ffff;  
+    --2nd-bd: #777777;
 }
 
 header {
@@ -35,5 +36,81 @@ header ul li a:hover{
 }
 
 .acc:hover {
+    background-color: var(--main-clr-hover);
+}
+
+.cont-height {
+    min-height: 85vh;
+    border-radius: 25px;
+    background-color: var(--main-bg);
+}
+
+.inputplace {
+    padding: 15px;
+    border-radius: 25px;
+    background: var();
+}
+.contur{
+    background: var(--main-bg);
+    margin: 22px;
+}
+.form-group {
+    padding: 5px;
+}
+.w-80 {
+    width: 80%;
+}
+.w-90 {
+    width: 100%;
+}
+.h-20 {
+    height: 20%;
+}
+.h-90 {
+    height: 90%;
+    border-radius: 15px;
+}
+.h-95 {
+    height: 95%;
+}
+.form-group {
+    margin: 10px;
+}
+.btn-save {
+    margin-bottom: 15px;
+    margin-left: 2%;
+    background-color: var(--main-clr);
+    color: var(--font-clr);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 15px;
+    width: 96%;
+    letter-spacing: 0.25em;
+    transition: 0.5s;
+}
+.subincome{
+    margin-top: 10px;
+}
+.subincome-text {
+   text-align: center;
+    margin-top: 12px;
+    color: var(--font-clr);
+    font-size: 12px;
+    font-weight: 600;
+}
+.subincome-btn {
+    background-color: var(--main-clr);
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px;
+    transition: 0.5s;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--font-clr);
+    margin: 10px 3px;
+}   
+
+.btn-save:hover, .subincome-btn:hover{
     background-color: var(--main-clr-hover);
 }
